@@ -12,3 +12,15 @@
   min-width: 100vh;
   min-height: 100vh;
 }
+a {
+  color: #BF8720!important;
+}
+a:hover {
+  color: #D4A552!important;
+}
+.bg-dark {
+  background-color: #2E2A24!important;
+}
+.text-light {
+  color: #FAD190!important;
+}
