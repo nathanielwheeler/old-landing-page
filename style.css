@@ -1,0 +1,14 @@
+.h-100 {
+  height: 100vh;
+}
+.my-spacer {
+  height: 5vh;
+}
+.main-background {
+  background-image: url(https://external-preview.redd.it/W6biaLgY9OT4U-tt4Ma1lzURX0wJ-TjEGI0giTMB3zQ.jpg?auto=webp&s=ee8d3f1bbd06df2ff57a28bcd0d7f973108789d4);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100vh;
+  min-height: 100vh;
+}
