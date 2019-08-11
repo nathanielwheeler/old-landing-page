@@ -4,6 +4,9 @@
 .my-spacer {
   height: 5vh;
 }
+.my-little-spacer {
+  height: 2.5vh;
+}
 .my-big-spacer {
   height: 15vh;
 }
@@ -26,4 +29,7 @@ a:hover {
 }
 .text-light {
   color: #FAD190!important;
+}
+.bg-warning {
+  background-color: #BF8720!important;
 }
