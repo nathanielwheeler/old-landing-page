@@ -2,7 +2,10 @@
   height: 100vh;
 }
 .my-spacer {
-  height: 10vh;
+  height: 5vh;
+}
+.my-big-spacer {
+  height: 15vh;
 }
 .main-background {
   background-image: url(https://external-preview.redd.it/W6biaLgY9OT4U-tt4Ma1lzURX0wJ-TjEGI0giTMB3zQ.jpg?auto=webp&s=ee8d3f1bbd06df2ff57a28bcd0d7f973108789d4);
