@@ -47,3 +47,16 @@ a:hover {
   min-width: 100vh;
   min-height: 100vh;
 }
+.border-light {
+  border: 2px #BF8720!important
+}
+table.table-bordered{
+    border:1px #BF8720!important;
+    margin-top:20px;
+  }
+table.table-bordered > thead > tr > th{
+    border:1px #BF8720!important;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px #BF8720!important;
+}
