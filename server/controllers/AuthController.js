@@ -2,8 +2,8 @@ import express from 'express'
 import userService from '../services/UserService';
 import { Authorize } from '../middleware/authorize'
 
-const _userService = new userService()
-const _repo = _userService.repository
+const _userService = new userService().repository
+
 //PUBLIC
 export default class AuthController {
     constructor() {
@@ -13,8 +13,14 @@ export default class AuthController {
             .use(Authorize.authenticated)
             .get('/authenticate', this.authenticate)
             .delete('/logout', this.logout)
+            .use(this.defaultRoute)
     }
 
+    defaultRoute(req, res, next) {
+        next({ status: 404, message: 'No Such Route' })
+    }
+
+    //#region -- AUTH COMMANDS --
     async register(req, res, next) {
         //VALIDATE PASSWORD LENGTH
         if (req.body.password.length < 6) {
@@ -90,5 +96,6 @@ export default class AuthController {
             })
         } catch (error) { next(error) }
     }
+    //#endregion
 }
 
