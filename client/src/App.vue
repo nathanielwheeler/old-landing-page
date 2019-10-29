@@ -1,31 +1,47 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<div id="app">
+		<navbar />
+
+		<router-view />
+	</div>
 </template>
+
+<script>
+import Navbar from "./components/Navbar.vue";
+export default {
+	components: { Navbar }
+};
+</script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+	font-family: "Avenir", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #f9d094;
+	background: #2e2a24;
 }
-#nav {
-  padding: 30px;
+.btn {
+	color: #be862c;
+	border-color: #be862c;
+	border-radius: 0;
+	background-color: #513d21;
+	padding: 5px;
+	margin: 5px;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.btn:hover {
+	color: #d3a459;
+	border-color: #d3a459;
+	background-color: #513d21;
+	text-decoration: underline;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.card {
+	background-color: #201d19;
+	border-radius: 0;
+	margin: 10px;
+}
+.card-img-top {
+	border-radius: 0;
 }
 </style>
