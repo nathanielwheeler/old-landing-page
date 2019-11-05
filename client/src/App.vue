@@ -1,15 +1,15 @@
 <template>
 	<div id="app">
-		<navbar />
+		<my-header />
 
 		<router-view />
 	</div>
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue";
+import MyHeader from "./components/MyHeader.vue";
 export default {
-	components: { Navbar }
+	components: { MyHeader }
 };
 </script>
 
@@ -21,6 +21,14 @@ export default {
 	text-align: center;
 	color: #f9d094;
 	background: #2e2a24;
+}
+a,
+.link {
+	color: #be862c;
+}
+a:hover,
+.link:hover {
+	color: #d3a459;
 }
 .btn {
 	color: #be862c;

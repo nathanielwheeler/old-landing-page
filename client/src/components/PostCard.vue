@@ -1,16 +1,15 @@
 <template>
-	<div class="navbar d-flex justify-content-center">
-		<router-link to="/" class="btn btn-outline">Home</router-link>
-	</div>
+	<div class="post-card"></div>
 </template>
 
 
 <script>
 export default {
-	name: "navbar",
+	name: "post-card",
 	data() {
 		return {};
 	},
+	props: ["postProp"],
 	computed: {},
 	methods: {},
 	components: {}
